@@ -1,0 +1,27 @@
+<%- include('./partials/head.ejs'); %>
+<body class="text-light bg-dark">
+    <h1>API de Productos</h1>
+    <h2>Ingrese nuevo producto</h2>
+    <br>
+    <div class="principal">
+    <form class="row gx-4 gy-4"  action="/api/productos" method="POST">
+        <% productos.forEach(function(producto){ %>
+            <div class="entradas col-md-4">
+                <input class="form-control" type="<%=producto.type%>" name="<%=producto.name%>" placeholder="<%=producto.nombreCampo%>">
+            </div>
+        <% }); %>
+        <br>
+        <div class="col-12 justify-items-center">
+            <button class="btn btn-primary">Cargar</button>
+        </div>
+    </form>
+    </div>
+    <br>
+    <div class="proxima">
+        <div class="botonNext"><button type="button" class="btn btn-outline-success"><a id="next" href="/productos">Ver productos</a></button></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+</html>

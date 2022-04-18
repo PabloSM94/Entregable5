@@ -1,0 +1,19 @@
+<h2>Ingrese nuevo producto</h2>
+<br>
+<div class="principal">
+<form class="row gx-4 gy-4"  action="/api/productos" method="POST">
+    {{#each productos}}
+    <div class="entradas col-md-4">
+    <input class="form-control" type="{{this.type}}" name="{{this.name}}" placeholder="{{this.nombreCampo}}">
+    </div>
+    {{/each}}
+    <br>
+    <div class="col-12 justify-items-center">
+        <button class="btn btn-primary">Cargar</button>
+    </div>
+</form>
+</div>
+<br>
+<div class="proxima">
+    <div class="botonNext"><button type="button" class="btn btn-outline-success"><a id="next" href="/productos">Ver productos</a></button></div>
+</div>

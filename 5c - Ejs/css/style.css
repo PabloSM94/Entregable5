@@ -1,0 +1,45 @@
+
+h1{
+    text-align: center;
+}
+h2{
+    color:darkgray;
+}
+#next{
+    text-decoration: none;
+    color: white;
+}
+
+.principal{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+
+.entradas{
+    justify-items: center;
+}
+
+.proxima{
+    text-align: center;
+}
+
+td{
+    color:aliceblue;
+}
+
+.tabla{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    text-align: center;
+    margin:auto;
+}
+
+.alerta{
+    width: 95%;
+    margin:auto;
+}
